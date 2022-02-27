@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="seconedTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="cxB-ie-Fbb" customClass="seconedTableViewCell" customModule="Enkaz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cxB-ie-Fbb" id="dbp-Sn-PmT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="783-TD-t2K">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="46.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcc-eG-3hq">
+                                <rect key="frame" x="263" y="13" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="DZn-YJ-Dcv">
+                                <rect key="frame" x="15" y="15" width="32" height="14"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="14" id="cEW-Aw-Avh"/>
+                                    <constraint firstAttribute="width" constant="32" id="mFN-8d-8Mf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pcc-eG-3hq" secondAttribute="bottom" constant="13" id="Nmu-bL-oRH"/>
+                            <constraint firstItem="DZn-YJ-Dcv" firstAttribute="top" secondItem="783-TD-t2K" secondAttribute="top" constant="15" id="afN-tP-4VW"/>
+                            <constraint firstAttribute="bottom" secondItem="DZn-YJ-Dcv" secondAttribute="bottom" constant="15" id="bes-SN-Hel"/>
+                            <constraint firstItem="DZn-YJ-Dcv" firstAttribute="leading" secondItem="783-TD-t2K" secondAttribute="leading" constant="15" id="iah-8R-ZUD"/>
+                            <constraint firstItem="pcc-eG-3hq" firstAttribute="top" secondItem="783-TD-t2K" secondAttribute="top" constant="13" id="ohM-cs-c4r"/>
+                            <constraint firstAttribute="trailing" secondItem="pcc-eG-3hq" secondAttribute="trailing" constant="15" id="yOH-fN-bNV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="783-TD-t2K" firstAttribute="leading" secondItem="dbp-Sn-PmT" secondAttribute="leading" id="CIy-ZR-owg"/>
+                    <constraint firstItem="783-TD-t2K" firstAttribute="top" secondItem="dbp-Sn-PmT" secondAttribute="top" id="Izr-y7-Ns0"/>
+                    <constraint firstAttribute="trailing" secondItem="783-TD-t2K" secondAttribute="trailing" id="VDZ-RR-OYE"/>
+                    <constraint firstAttribute="bottom" secondItem="783-TD-t2K" secondAttribute="bottom" id="eX4-ov-FYi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="S7a-I7-PlM"/>
+            <connections>
+                <outlet property="pageName" destination="pcc-eG-3hq" id="ToK-25-hQT"/>
+            </connections>
+            <point key="canvasLocation" x="50.724637681159422" y="64.955357142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="back" width="80" height="150"/>
+    </resources>
+</document>
